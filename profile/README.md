@@ -1,17 +1,16 @@
-## neuraldoc hält Produktdokumentation auf dem Stand des Codes
+## neuraldoc keeps product documentation in step with the code
 
-Ändert sich der Code, findet neuraldoc die Dokumente, die dadurch veralten, und schlägt belegte Textänderungen vor. Jeder Vorschlag zeigt seine Quelle im Code. Ein Mensch prüft und gibt frei.
+When the code changes, neuraldoc finds the documents that become outdated and proposes evidence-backed text changes. Every proposal shows its source in the code. A person reviews and approves.
 
-| Repository | Wofür |
+| Repository | Purpose |
 | --- | --- |
-| [neuraldoc-dashboard](https://github.com/neuraldoc-ai/neuraldoc-dashboard) | Das Werkzeug. Lokal starten, das Beispiel ansehen oder ein eigenes Projekt prüfen. |
-| [neuraldoc-landing](https://github.com/neuraldoc-ai/neuraldoc-landing) | Die Website. |
-| [mobiq](https://github.com/neuraldoc-ai/mobiq) | Unser Beispiel- und Testdatensatz: ein erfundener ERP-Hersteller mit Release, Tickets und veralteter Doku. |
-| [mobiq-code](https://github.com/neuraldoc-ai/mobiq-code) · [mobiq-docs](https://github.com/neuraldoc-ai/mobiq-docs) · [mobiq-db](https://github.com/neuraldoc-ai/mobiq-db) | Code, Dokumentation und Datenbank dieses Datensatzes. |
+| [neuraldoc-dashboard](https://github.com/neuraldoc-ai/neuraldoc-dashboard) | The tool. Run it locally, explore the example or check a project of your own. |
+| [mobiq](https://github.com/neuraldoc-ai/mobiq) | Our example and test dataset: a fictional ERP vendor with a release, tickets and outdated documentation. |
+| [mobiq-code](https://github.com/neuraldoc-ai/mobiq-code) · [mobiq-docs](https://github.com/neuraldoc-ai/mobiq-docs) · [mobiq-db](https://github.com/neuraldoc-ai/mobiq-db) | Code, documentation and database of that dataset. |
 
-### Ausprobieren
+### Try it
 
-Voraussetzungen: [Node.js 24](https://nodejs.org) und Git.
+Requirements: [Node.js 24](https://nodejs.org) and Git.
 
 ```bash
 git -c core.autocrlf=false clone --recursive https://github.com/neuraldoc-ai/neuraldoc-dashboard.git
@@ -20,6 +19,6 @@ npm ci
 npm run dev
 ```
 
-Dann http://localhost:5174/app/ öffnen. Das Beispiel läuft ohne Schlüssel und ohne Kosten. Für ein eigenes Projekt braucht es einen Jev-Schlüssel und ein Sprachmodell nach Wahl, siehe [README](https://github.com/neuraldoc-ai/neuraldoc-dashboard#readme).
+Then open http://localhost:5174/app/. The example runs without keys and at no cost. A project of your own needs a Jev key and a language model of your choice, see the [README](https://github.com/neuraldoc-ai/neuraldoc-dashboard#readme). The interface is in German.
 
-Alle Repositories stehen unter der MIT-Lizenz. Firmen, Personen und Inhalte im Beispiel sind erfunden.
+All repositories are MIT-licensed. Companies, people and contents in the example are fictional.
